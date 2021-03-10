@@ -11,6 +11,9 @@ pipeline {
       when {
         branch 'master'
       }
+      environment {
+        CI = 'true'
+      }
       steps {
         sh './jenkins/scripts/test.sh'
       }
