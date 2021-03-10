@@ -14,7 +14,7 @@ pipeline {
 
     stage('Tests') {
       when {
-        branch 'feature/does-not-exist'
+        branch 'master'
       }
       steps {
         sh './jenkins/scripts/test.sh'
